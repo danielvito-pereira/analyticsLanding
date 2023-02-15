@@ -183,6 +183,65 @@ body {
 .header .-side {
   display: none;
 }
+.header .center {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .center .textblock {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 49px;
+  width: 550px;
+  height: 315px;
+}
+.header .center .textblock .text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+}
+.header .center .textblock .text .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.header .center .textblock .text .p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8794BA;
+}
+.header .center .mainscreen {
+  width: 50%;
+}
+
+.-roza {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 80px;
+  background: #EF2A82;
+  border-radius: 68px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 480px) {
   .header .navigation {
