@@ -163,6 +163,14 @@ body {
   border: 1px solid #465B95;
   border-radius: 68px;
 }
+.header .navigation .container .btns .btn:hover {
+  color: #060F28;
+  background-color: whitesmoke;
+  border: 1px solid #465B95;
+}
+.header .navigation .container .btns .-s {
+  border: none;
+}
 .header .navigation .container .button {
   display: none;
   cursor: pointer;
@@ -181,11 +189,15 @@ body {
 .header .navigation .container .nav .ul .li {
   margin: 0 0.5em;
 }
+.header .navigation .container .nav .ul .li:hover {
+  color: whitesmoke;
+}
 .header .-side {
   display: none;
 }
 .header .center {
   width: 90%;
+  max-width: 120rem;
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -240,8 +252,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
   color: #FFFFFF;
+}
+.-roza:hover {
+  background: #FFFFFF;
+  color: #EF2A82;
 }
 
 .btn {
@@ -405,7 +420,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  /* or 27px */
   color: #8794BA;
   text-align: center;
 }
@@ -421,13 +435,13 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  padding: 1em;
   background: #0F1F4B;
   opacity: 0.7;
-  width: 340px;
-  height: 440px;
   cursor: pointer;
   border-radius: 30px;
+  gap: 20px;
+  padding: 4em 0;
+  max-width: 340px;
 }
 .footer .pricing-plans .plans .plan:hover {
   box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
@@ -450,9 +464,6 @@ body {
 .footer .pricing-plans .plans .-branco .number {
   color: #172755;
 }
-.footer .pricing-plans .plans .-branco .btn {
-  background: #EF2A82;
-}
 .footer .pricing-plans .plans .-branco .title {
   color: #172755;
 }
@@ -467,7 +478,7 @@ body {
   border-top: 1px solid #2A407C;
 }
 .footer .pricing-plans .aside .wrapper {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -478,6 +489,7 @@ body {
 }
 .footer .pricing-plans .aside .wrapper .logo {
   width: 10%;
+  cursor: pointer;
 }
 .footer .pricing-plans .aside .wrapper .menu-footer {
   display: flex;
@@ -488,6 +500,12 @@ body {
   flex-flow: row nowrap;
   gap: 3.125rem;
 }
+.footer .pricing-plans .aside .wrapper .menu-footer .ul .li {
+  margin: 0 0.5em;
+}
+.footer .pricing-plans .aside .wrapper .menu-footer .ul .li .a:hover {
+  color: whitesmoke;
+}
 .footer .pricing-plans .aside .wrapper .redes {
   display: flex;
   flex-flow: row nowrap;
@@ -497,6 +515,32 @@ body {
 .hr {
   width: 90%;
   background: #2A407C;
+}
+
+.btn {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 53px;
+  border: 1px solid #465B95;
+  border-radius: 68px;
+}
+.btn:hover {
+  color: #060F28;
+  background-color: whitesmoke;
+  border: 1px solid #465B95;
+}
+
+#carrossel {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  gap: 50px;
+}
+
+.item {
+  flex: 1 0 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 580px) {
@@ -760,6 +804,12 @@ body {
   }
   .main .container .figure {
     width: 100%;
+  }
+  .footer .pricing-plans .plans #carrossel {
+    gap: 0px;
+  }
+  .footer .pricing-plans .plans #carrossel .plan {
+    min-width: 280px;
   }
   .footer .pricing-plans .aside .wrapper {
     width: 100%;
