@@ -31,9 +31,9 @@ function verificarFimCarrossel() {
 //listener para o evento de transição da div do carrossel. Quando a transição for concluída, verifique se o carrossel chegou ao final e reinicie-o, se necessário.
 carrossel.addEventListener('transitionend', event => {
   verificarFimCarrossel();
-});
-
+});dsdasd
 */
+
 
 // evento de toque para detectar o movimento do dedo na tela. estou  fazendo isso usando a API de eventos touch do JavaScript.
 var carrossel = document.getElementById('carrossel');
